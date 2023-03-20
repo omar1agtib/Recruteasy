@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>CodePen - Login Form - Modal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="css/formulaire.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Space+Grotesk:wght@500;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+body {
+    font-family: 'Caveat', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Serif', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Work Sans', sans-serif;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #71c3f9 ;
+    margin: 0;
+    padding: 0 ;
+}
+
+body>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.wrapper {
+    margin-top: 30px;
+    width: 700px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .05);
+    overflow: hidden;
+}
+
+.headform {
+    background-color: rgb(24, 24, 24);
+    width : 100% ;
+}
+h1.title {
+    padding: 15px 0;
+    margin-left: 0 ;
+    font-weight: 600;
+    color: white ;
+    font-size: 1.7rem ;
+    text-align : center ;
+}
+
+.headform i {
+    margin-right: 11px;
+    font-size : 2rem ;
+}
+
+.form {
+    width: 700px;
+}
+
+.myform {
+    width : 100% ;
+    background: #F4F5F7;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px
+}
+
+.myform span {
+    margin-left: 5px;
+}
+.myform i {
+    font-size : 14px ;
+    font-weight: 600;
+}
+.myform label {
+    display: block;
+    color: rgb(24, 24, 24);
+    font-weight: bold;
+    font-size: .8rem;
+    margin-bottom: 10px;
+    margin-left : 1px ;
+}
+
+.myform input , .myform .select{
+    border: 0;
+    outline: 0;
+    height: 45px;
+    background: #FFF;
+    width: 100%;
+    border-radius: 5px;
+    color: rgb(24, 24, 24);
+    font-weight: 700;
+    font-size: .9rem;
+    text-indent: 15px;
+    border: 2px solid transparent;
+    transition: border 250ms;
+}
+.myform input:focus {
+    border : 2px solid rgb(24, 24, 24) ;
+}
+.myform input::placeholder {
+    font-size: 15px ;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.full-width {
+    grid-column: -1 / 1 ;
+}
+
+.button {
+    grid-column: -1 / 1;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width : 120px ;
+}
+button[type="submit"]  {
+    width : 200px ;
+    margin : auto ;
+}
+.btn-danger {
+    width : 120 ;
+}
+
+.select:focus {
+    border : 2px solid rgb(24, 24, 24) ;
+}
+.buttons {
+    
+    display: flex;
+    justify-content: space-between;
+} 
+
+.description {
+    width : 100% ;
+    min-height: 100px;
+    max-height: 130px;
+}
+
+</style>
+</head>
+<body>
+    
+    <!--Informations personnelles-->
+    <div class="wrapper">
+        <div class="form">
+            <div class="headform"><h1 class="title"><i class="fa-solid fa-address-card"></i>Informations personnelles</h1></div>
+            
+   
+            <form action="#" class="myform">
+                <div class="control-from">
+                    <label for="firstname">Nom *</label>
+                    <input type="text" id="firstname" value="" placeholder="" required>
+                </div>
+   
+                <div class="control-from">
+                    <label for="lastname">Prénom *</label>
+                    <input type="text" id="lastname" value="" required>
+                </div>
+   
+                <div class="control-from">
+                    <label for="address"><i class="fa-solid fa-location-dot"></i><span>Address *</span> </label>
+                    <input type="text" id="address" value="" placeholder="numéro, rue, ville, pays, code postal" required>
+                </div>
+   
+                <div class="control-from">
+                    <label for="phonenumber"> <i class="fa-solid fa-envelope"></i> <span>Email *</span> </label>
+                    <input type="phone" id="phonenumber" value="" placeholder="Ex : prenom.nom@domaine.com" required>
+                </div>
+                <div class="control-from">
+                    <label for="phonenumber"><i class="fa-solid fa-phone"></i><span>Numéro de téléphone</span>  </label>
+                    <input type="phone" id="phonenumber" value="" required>
+                </div>
+   
+                <div class="control-from">
+                    <label for="inputState"><i class="fa-solid fa-venus-mars"></i><span>Status</span> </label>
+                    <select id="inputState" class="form-control select">
+                      <option selected value="Home">Home</option>
+                      <option value="Femme">Femme</option>
+                    </select>
+                </div>
+
+                <div class="control-from">
+                    <label for="phonenumber"><i class="fa-solid fa-calendar-days"></i><span>Date de naissance</span>  </label>
+                    <input type="date" id="phonenumber" value="" required>
+                </div>
+   
+                <div class="control-from">
+                    <label for="phonenumber"><i class="fa-regular fa-earth-asia"></i><span>Lieu de naissance</span>  </label>
+                    <input type="text" id="phonenumber" value="" required>
+                </div>
+                
+                <!--<div class="control-from">
+                    <label for="inputState"><i class="fa-regular fa-clipboard-user"></i><span>État civil</span> </label>
+                    <select id="inputState" class="form-control select">
+                      <option selected value="Home">Célibataire</option>
+                      <option value="Femme">Marié(e)</option>
+                      <option value="Femme">Divorcé(e)</option>
+                      <option value="Femme">Veuf/Veuve</option>
+                    </select>
+                </div>
+   
+                <div class="button">
+                    <button id="register">Register</button>
+                </div>--> 
+                
+                    <button type="button" class="btn btn-success m-auto ">Valider</button>
+                    <button class="btn btn-danger m-auto" type="reset">Effacer</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Experiences-->
+    <div class="wrapper">
+        <div class="form">
+            <div class="headform"><h1 class="title"><i class="fa-solid fa-business-time"></i>Expérience professionnelle</h1></div>
+            
+   
+            <form action="#" class="myform">
+                <div class="control-from">
+                    <label for="firstname"><i class="fa-solid fa-briefcase"></i><span> Poste occupé *</span></label>
+                    <input type="text" id="firstname" value="" placeholder="" required>
+                </div>
+   
+                <div class="control-from">
+                    <label for="lastname"><i class="fa-solid fa-building"></i><span>Nom de la société*</span> </label>
+                    <input type="text" id="lastname" value="" required>
+                </div>
+
+                <div class="control-from">
+                    <label for="phonenumber"><i class="fa-solid fa-calendar-days"></i><span>Date debut *</span>  </label>
+                    <input type="date" id="phonenumber" value="" required>
+                </div>
+                <div class="control-from">
+                    <label for="phonenumber"><i class="fa-solid fa-calendar-days"></i><span>Date fin *</span>  </label>
+                    <input type="date" id="phonenumber" value="" required>
+                </div>             
+                    <button type="button" class="btn btn-success m-auto ">Valider</button>
+                    <button class="btn btn-danger m-auto" type="reset">Effacer</button>
+                    <button type="submit" class="btn btn-primary full-width" ONC>Ajouter Expérience</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Formation-->
+    <div class="wrapper">
+        <div class="form">
+            <div class="headform"><h1 class="title"><i class="fa-solid fa-graduation-cap"></i>Formation</h1></div>
+            
+   
+            <form action="#" class="myform">
+                <div class="control-from">
+                    <label for="firstname"><i class="fa-solid fa-briefcase"></i><span> Etablissement *</span></label>
+                    <input type="text" id="firstname" value="" placeholder="" required>
+                </div>
+   
+                <div class="control-from">
+                    <label for="lastname"><i class="fa-solid fa-building"></i><span>Diplôme obtenu*</span> </label>
+                    <input type="text" id="lastname" value="" required>
+                </div>
+
+                <div class="control-from">
+                    <label for="phonenumber"><i class="fa-solid fa-calendar-days"></i><span>Date debut *</span>  </label>
+                    <input type="date" id="phonenumber" value="" required>
+                </div>
+                <div class="control-from">
+                    <label for="phonenumber"><i class="fa-solid fa-calendar-days"></i><span>Date fin *</span>  </label>
+                    <input type="date" id="phonenumber" value="" required>
+                </div>
+               <div class="full-width ">
+                    <label for="lastname">description </label>
+                    <textarea type="text" id="lastname" class="description" value="" required></textarea>
+                </div>
+                
+   
+                   
+                
+                    <button type="button" class="btn btn-success m-auto ">Valider</button>
+                    <button class="btn btn-danger m-auto" type="reset">Effacer</button>
+                    <button type="submit" class="btn btn-primary full-width">Ajouter Expérience</button>
+            </form>
+        </div>
+    </div>
+    <!--Compétences-->
+    <div class="wrapper">
+        <div class="form">
+            <div class="headform"><h1 class="title"><i class="fas fa-chart-bar"></i>Compétences</h1></div>
+            
+   
+            <form action="#" class="myform">
+                <div class="control-from">
+                    <label for="firstname"><i class="fas fa-lightbulb"></i><span> Compétence *</span></label>
+                    <input type="text" id="firstname" value="" placeholder="" required>
+                </div>
+   
+                <div class="control-from">
+                    <label for="inputState"><i class="fas fa-star"></i><span>Niveau *</span> </label>
+                    <select id="inputState" class="form-control select">
+                      <option selected value="">Débutant</option>
+                      <option value="">Intermédiaire</option>
+                      <option value="">Expert</option>
+                    </select>
+                </div>
+   
+                
+                    <button type="button" class="btn btn-success m-auto ">Valider</button>
+                    <button class="btn btn-danger m-auto" type="reset">Effacer</button>
+                    <button type="submit" class="btn btn-primary full-width">Ajouter Expérience</button>
+            </form>
+        </div>
+    </div>
+    <!--Langues-->
+    <div class="wrapper">
+        <div class="form">
+            <div class="headform"><h1 class="title"><i class="fas fa-language"></i>
+                Langues</h1></div>
+            
+   
+            <form action="#" class="myform">
+                <div class="control-from">
+                    <label for="firstname"><i class="fa-regular fa-language"></i><span> Langue *</span></label>
+                    <input type="text" id="firstname" value="" placeholder="" required>
+                </div>
+   
+                <div class="control-from">
+                    <label for="inputState"><i class="fas fa-star"></i><span>Niveau *</span> </label>
+                    <select id="inputState" class="form-control select">
+                      <option selected value="">Débutant</option>
+                      <option value="">Intermédiaire</option>
+                      <option value="">Expert</option>
+                    </select>
+                </div>
+   
+                
+                    <button type="button" class="btn btn-success m-auto ">Valider</button>
+                    <button class="btn btn-danger m-auto" type="reset">Effacer</button>
+                    <button type="submit" class="btn btn-primary full-width">Ajouter Expérience</button>
+            </form>
+        </div>
+    </div>
+    <!--Loisirs-->
+    <div class="wrapper">
+        <div class="form">
+            <div class="headform"><h1 class="title"><i class="fas fa-grin-beam"></i>
+                Loisirs</h1></div>
+            
+   
+            <form action="#" class="myform">
+                <div class="control-from">
+                    <label for="firstname"><span> Loisir 1 </span></label>
+                    <input type="text" id="firstname" value="" placeholder="" required>
+                </div>
+                <div class="control-from">
+                    <label for="firstname"><span> Loisir 2 </span></label>
+                    <input type="text" id="firstname" value="" placeholder="" required>
+                </div>
+                <div class="control-from">
+                    <label for="firstname"><span> Loisir 3 </span></label>
+                    <input type="text" id="firstname" value="" placeholder="" required>
+                </div>
+                <div class="control-from">
+                    <label for="firstname"><span> Loisir 4 </span></label>
+                    <input type="text" id="firstname" value="" placeholder="" required>
+                </div>
+   
+             
+   
+                
+                    <button type="button" class="btn btn-success m-auto ">Valider</button>
+                    <button class="btn btn-danger m-auto" type="reset">Effacer</button>
+                    <button type="submit" class="btn btn-primary full-width">Ajouter Expérience</button>
+            </form>
+        </div>
+    </div>
+
+   
+</body>
+</html>

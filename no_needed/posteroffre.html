@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Publier une offre d'emploi</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Space+Grotesk:wght@500;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Caveat', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Serif', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Work Sans', sans-serif;
+ }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #ffffff;
+        
+      }
+      .container {
+        margin-top: 50px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: #6c757d;
+    
+      }
+      h1 span {
+        border-bottom: 2px solid rgb(115, 196, 249) ;
+      }
+      .form-group label {
+        font-weight: bold;
+        color: #6c757d;
+        font-size: 1.2rem;
+      }
+      .form-control {
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid rgb(108, 117, 125);
+        box-shadow: 0 0 20px rgb(108, 117, 125,0.2) ;
+      }
+      .form-control:focus {
+        box-shadow: none;
+        border-color: rgb(115, 196, 249);
+      }
+      .btn-primary {
+        background-color: rgb(115, 196, 249);
+        border: none;
+        border-radius: 0.25rem;
+        padding: 9px 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    
+      }
+      .btn-primary:hover {
+        background-color: rgb(70, 175, 246);
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Publier une <span>offre d'emploi</span> </h1>
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          <img
+             src="images/RH.jpg"
+            alt="Image"
+          />
+        </div>
+        <div class="col-md-6 mt-5">
+          <form>
+            <div class="form-group">
+              <label for="titre">Titre de l'offre :</label>
+              <input
+                type="text"
+                class="form-control"
+                id="titre"
+                placeholder="Saisir le titre de l'offre"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lieu">Lieu :</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lieu"
+                placeholder="Saisir le lieu"
+              />
+            </div>
+            <div class="form-group">
+              <label for="typeContrat">Type de contrat :</label>
+              <select class="form-control" id="typeContrat">
+                <option>CDI</option>
+                <option>CDD</option>
+                <option>Stage</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="nomSociete">Nom de la société :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nomSociete"
+                  placeholder="Saisir le nom de la société"
+                />
+              </div>
+              <div class="form-group">
+                <label for="description">Description de l'offre :</label>
+                <textarea
+                  class="form-control"
+                  id="description"
+                  rows="5"
+                  placeholder="Saisir la description de l'offre"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Publier</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    </body>
+  </html>

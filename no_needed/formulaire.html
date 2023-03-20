@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Cv</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container mt-4" style="width: 60%;">
+        <form>
+
+            <!--Informations personnelles-->
+            <div class="firstc">
+                <h2>Informations personnelles</h2>
+
+                <div class="form-group">
+                    <label for="photo"></label>
+                    <input type="file" class="form-control" id="inputAddress" >
+                  </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nom">Nom</label>
+                        <input type="text" class="form-control" id="nom" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="Prénom">Prénom</label>
+                      <input type="text" class="form-control" id="Prénom" placeholder="">
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="">
+                      </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPhne">Phone</label>
+                        <input type="tel" class="form-control" id="inputPhone" placeholder="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="ville">Ville</label>
+                    <input type="text" class="form-control" id="ville" placeholder="">
+                        
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="inputVille">Address</label>
+                        <input type="text" class="form-control" id="inputVille" placeholder="">
+                  </div>
+
+                  <div class="form-group col-md-6 ">
+                      <label for="inputState">State</label>
+                      <select id="inputState" class="form-control selecttt">
+                        <option selected value="Home">Home</option>
+                        <option value="Femme">Femme</option>
+                      </select>
+                  </div>
+                  
+                
+            </div>
+            
+
+
+
+              <!--Experiences-->
+            <div class="firstc mt-4">
+                <h2>Expériences</h2>
+
+                <div class="form-row" style="margin-top: 20px;">
+                    <div class="form-group col-md-6">
+                        <label for="poste">Poste occupé</label>
+                        <input type="text" class="form-control" id="poste" placeholder="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="societe">Nom de la société </label>
+                        <input type="text" class="form-control" id="societe" placeholder="">
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Ville">Ville</label>
+                        <input type="text" class="form-control" id="Ville" placeholder="">
+                  </div>
+
+                
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="date_debut">Date debut</label>
+                        <input type="date" class="form-control" id="date_debut" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="date_fin">Date fin</label>
+                      <input type="date" class="form-control" id="date_fin" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+  
+            
+            <!--Formation-->
+            <div class="firstc mt-4">
+                <h2>Formation</h2>
+
+          
+
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="Etablissement">Etablissement</label>
+                        <input type="text" class="form-control" id="Etablissement" placeholder="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail">Ville</label>
+                        <input type="email" class="form-control" id="Ville" name="email" placeholder="">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="date_debut">Date debut</label>
+                        <input type="date" class="form-control" id="date_debut" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="date_fin">Date fin</label>
+                      <input type="date" class="form-control" id="date_fin" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="Diplôme obtenu">Diplôme obtenu</label>
+                      <input type="text" class="form-control" id="Diplôme obtenu" placeholder="">
+                </div>
+                  
+                  <div class="form-group">
+                    <label for="inputVille">Description</label>
+                        <textarea class="form-control" id="Description" placeholder=""></textarea>
+                  </div>
+                </div>
+
+       
+            
+
+            <!--Compétences-->
+
+
+
+            <div class="firstc mt-4">
+                <h2>Compétences</h2>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="Compétences">Nom du compétences</label>
+                        <input type="text" class="form-control" id="Compétences" placeholder="">
+                  </div>
+  
+                  <div class="form-group col-md-6 ">
+                    <label for="NiveauCompetences">Niveau</label>
+                    <select id="NiveauCompetences" class="form-control selecttt">
+                      <option selected value="">Sélectionner un niveau</option>
+                      <option value="Débutant">Débutant</option>
+                      <option value="Intermédiaire">Intermédiaire</option>
+                      <option value="Expert">Expert</option>
+                    </select>
+                </div> 
+                </div>
+                <button type="button" class="btn btn-primary" id="addSkill">Ajouter une compétence</button>
+            </div>
+
+
+            <!--Langues-->
+
+
+
+            <div class="firstc mt-4">
+              <h2>Langues</h2>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="Langues">Langues</label>
+                      <input type="text" class="form-control" id="Langues" placeholder="">
+                </div>
+
+                <div class="form-group col-md-6 ">
+                  <label for="NiveauLangue">Niveau</label>
+                  <select id="NiveauLangue" class="form-control selecttt">
+                    <option selected value="">Sélectionner un niveau</option>
+                    <option value="Débutant">Débutant</option>
+                    <option value="Intermédiaire">Intermédiaire</option>
+                    <option value="Expert">Expert</option>
+                  </select>
+              </div> 
+              </div>
+              
+          </div>
+
+
+
+            
+
+            <!--Loisir-->
+            <div class="firstc mt-4">
+                <h2>Loisir</h2>
+              
+                  <div class="form-group">
+                    <label for="Loisir1">Loisir 1</label>
+                        <input type="text" class="form-control" id="Loisir1" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Loisir2">Loisir 2</label>
+                        <input type="text" class="form-control" id="Loisir2" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="Loisir3">Loisir 3</label>
+                        <input type="text" class="form-control" id="Loisir 3" placeholder="">
+                  </div>
+
+            </div>
+        
+            
+          </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/comp.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
