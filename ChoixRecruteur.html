@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choix</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/choixcondidat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          
+        }
+        header {
+      background-color: rgb(49, 48, 52);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      padding: 20px ;
+    }
+    header a {
+     color : white ;
+     font-size: 3em ;
+     font-weight : 700 ;
+     text-decoration: none;
+     margin-left : 50px ;
+    }
+    header a span {
+      color :  rgb(115, 196, 249) ;
+    }
+    
+    
+    .decon {
+      font-size: 15px;
+      padding: 5px 10px ;
+      margin-right : 27px ;
+      
+    }
+    
+    
+      
+        </style>
+</head>
+<body>
+    <header>
+        <a href="firstpage.html" class="navbar-brand">Recrut<span class="eazy">Easy</span></a>
+        <a href="firstpage.html" class="decon btn btn-primary">Deconnection</a>
+       </header>
+     
+    <div class="container">
+      <div class="top">
+        <h1 class="text-primary">Bienvenue ! Notre Recruteur </h1>
+        <p>Choisissez une des options ci-dessus pour continuer.</p>
+      </div>
+      
+        <div class="row d-flex justify-content-around mt-5 ">
+            <div class="col-lg-4 col-sm-12">
+              <div class="card text-center">
+                <i class="fa-solid fa-briefcase"></i>                
+                <div class="card-body">
+                  <h5 class="card-title">Poster un offre</h5>
+                  <hr>
+                  <p class="card-text">Postez un offre d'emploi ou de stage.</p>
+                  <a href="PosterOffre.php" class="btn btn-primary">clicker ici</a>
+                </div>
+              </div>   
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="card text-center">
+                <i class="fa-sharp fa-solid fa-bell"></i>
+                <div class="card-body">
+                  <h5 class="card-title"> Suivi des candidatures</h5>
+                  <hr>
+                  <p class="card-text">Visualiser rapidement toutes les candidatures reçues pour une offre d'emploi.</p>
+                  <a href="candidaturerecues.php" class="btn btn-primary">clicker ici</a>
+                </div>
+              </div>   
+            </div>
+        </div>
+     </div>
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

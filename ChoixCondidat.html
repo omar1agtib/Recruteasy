@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choix</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/choixcondidat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      
+    }
+    header {
+  background-color: rgb(49, 48, 52);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 20px ;
+}
+header a {
+ color : white ;
+ font-size: 3em ;
+ font-weight : 700 ;
+ text-decoration: none;
+ margin-left : 50px ;
+}
+header a span {
+  color :  rgb(115, 196, 249) ;
+}
+
+
+.decon {
+  font-size: 15px;
+  padding: 5px 10px ;
+  margin-right : 27px ;
+  
+}
+.voirecv {
+  border-radius:15px;
+}
+
+
+  
+    </style>
+</head>
+<body>
+
+  <header>
+    <a href="firstpage.html" class="navbar-brand">Recrut<span class="eazy">Easy</span></a>
+    <a href="firstpage.html" class="decon btn btn-primary">Deconnection</a>
+   </header>
+    <div class="container">
+      <div class="top">
+        <h1 class="text-primary">Bienvenue ! Notre candidat </h1>
+        <p>Choisissez une des options ci-dessus pour continuer.</p>
+      </div>
+      
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-4 col-sm-12">
+              <div class="card text-center">
+                <i class="fa-solid fa-file-waveform"></i> 
+                <div class="card-body">
+                  <h5 class="card-title">Remplir le formulaire CV</h5>
+                  <hr>
+                  <p class="card-text">Créez votre CV en ligne en remplissant notre formulaire pour postuler à nos offres.</p>
+                  <a href="CV.php" class="btn btn-primary">Remplir le formulaire</a>
+                </div>
+              </div>   
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="card text-center">
+                <i class="fa-solid fa-download"></i> 
+                <div class="card-body">
+                  <h5 class="card-title">Télécharger votre CV</h5>
+                  <hr>
+                  <form method="post">
+                    <p class="card-text">Si vous avez déjà un CV, vous pouvez le télécharger sur notre plateforme .</p>
+                    <div class="form-group">
+                      <input type="file" name="cv_file" class="form-control-file btn btn-primary w-60" required>
+                    </div>
+                  </form>
+                </div>
+              </div>   
+            </div>
+            
+            <div class="col-lg-4 col-sm-12">
+              <div class="card text-center">
+                <i class="fa-solid fa-magnifying-glass"></i> 
+                <div class="card-body">
+                  <h5 class="card-title">Chercher les offres d'emploi</h5>
+                  <hr>
+                  <p class="card-text">Consultez nos offres d'emploi disponibles et postulez directement en ligne.</p>
+                  <a href="offres.php" class="btn btn-primary">Voir les offres d'emploi</a>
+                </div>
+              </div>   
+            </div>
+        </div>
+
+         <a href=" CVTOPDF.php" class="btn btn-primary mt-2 voirecv">Voir votre Cv</a>
+     </div>
+
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
